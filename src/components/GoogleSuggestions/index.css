@@ -1,0 +1,84 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4; /* Add a background color to see the centering */
+}
+
+.bgContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+}
+
+.googleImgStyle {
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+
+.inputSearchContainer {
+  display: flex;
+  justify-content: flex-start;
+  width: 95%;
+}
+
+.suggestionAndInputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 10px;
+  width: 95%;
+}
+
+.searchInput {
+  flex-grow: 1;
+  border: none;
+  padding: 10px;
+  outline: none;
+  background-color: transparent;
+}
+
+.searchIcon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.suggestionsListContainerStyle {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 95%;
+}
+
+/* Add any other styles you need */
+@media (max-width: 767px) /* small and xs */ {
+  .googleImgStyle {
+    height: 80px;
+    width: 230px;
+  }
+  .suggestionAndInputContainer {
+    width: 340px;
+  }
+}
+
+@media (min-width: 768px) /* L and Xl */ {
+  .googleImgStyle {
+    height: 140px;
+    width: 440px;
+  }
+  .suggestionAndInputContainer {
+    width: 500px;
+  }
+}

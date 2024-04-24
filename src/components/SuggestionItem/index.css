@@ -1,0 +1,18 @@
+.suggestionStyle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.para {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
